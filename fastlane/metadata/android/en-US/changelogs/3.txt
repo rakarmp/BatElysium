@@ -1,2 +1,0 @@
-- Fix ru-RU translation
-- Add uk-UA translation 
