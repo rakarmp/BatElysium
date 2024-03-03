@@ -1,0 +1,135 @@
+<resources>
+<string name="app_name">BatElysium</string>
+
+    <string name="title_permission">Izin</string>
+
+    <string name="permission_message">Kami membutuhkan izin khusus untuk melanjutkan. Gunakan ADB untuk menjalankan perintah berikut (satu baris):</string>
+    <string name="permission_command" translatable="false">adb shell pm grant me.rexx.saveyourbattery android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="permission_command_with_user" translatable="false">adb shell pm grant --user %1$s me.rexx.saveyourbattery android.permission.WRITE_SECURE_SETTINGS</string>
+
+    <string name="please_wait">Menunggu izin</string>
+    <string name="copied">Disalin ke clipboard</string>
+
+    <string name="snackbar_intent_failed">Tidak dapat menangani aksi ini</string>
+    <string name="snackbar_failed_to_apply">Gagal menerapkan; perangkat kemungkinan tidak kompatibel</string>
+    <string name="snackbar_low_power">Perubahan akan berlaku saat perangkat dalam mode hemat baterai</string>
+    <string name="snackbar_applied">Berhasil menerapkan profil</string>
+    <string name="snackbar_reset">Berhasil mengatur ulang profil</string>
+
+    <string name="source_url" translatable="false">https://saweria.co/zyarexx</string>
+
+    <string name="export_share_title">Konstanta Hemat Baterai</string>
+
+    <string name="category_profiles">Profil</string>
+    <string name="category_share">Bagikan</string>
+    <string name="category_about">Donasi</string>
+    <string name="category_config">Konfigurasi</string>
+
+<string name="pref_profile_key_default" translatable="false">default</string>
+<string name="pref_profile_title_default">Default</string>
+<string name="pref_profile_summary_default">Gunakan pengaturan hemat baterai default perangkat</string>
+
+<string name="pref_profile_key_light" translatable="false">light</string>
+<string name="pref_profile_title_light">Ringan</string>
+<string name="pref_profile_summary_light">Penghematan baterai yang sedikit dan hampir tidak mempengaruhi pengalaman pengguna</string>
+
+<string name="pref_profile_key_moderate" translatable="false">moderate</string>
+<string name="pref_profile_title_moderate">Moderat</string>
+<string name="pref_profile_summary_moderate">Setelan seimbang untuk menghemat baterai tanpa mengurangi kinerja</string>
+
+<string name="pref_profile_key_high" translatable="false">high</string>
+<string name="pref_profile_title_high">Tinggi</string>
+<string name="pref_profile_summary_high">Pengurangan konsumsi daya yang agresif dengan penurunan kinerja yang signifikan</string>
+
+<string name="pref_profile_key_extreme" translatable="false">extreme</string>
+<string name="pref_profile_title_extreme">Ekstrem</string>
+<string name="pref_profile_summary_extreme">Setelan maksimal untuk menghemat daya sebanyak mungkin</string>
+
+<string name="pref_key_export" translatable="false">export</string>
+<string name="pref_title_export">Ekspor</string>
+<string name="pref_summary_export">Bagikan konstanta penghemat baterai ke tempat lain</string>
+
+<string name="pref_key_import" translatable="false">import</string>
+<string name="pref_title_import">Impor</string>
+<string name="pref_summary_import">Konfigurasi menggunakan profil baru</string>
+
+<string name="pref_config_key_advertise_is_enabled" translatable="false">advertise_is_enabled</string>
+<string name="pref_config_title_advertise_is_enabled">Iklankan penghemat daya</string>
+<string name="pref_config_summary_advertise_is_enabled">Beritahu aplikasi bahwa perangkat dalam mode hemat daya; beberapa aplikasi akan menggunakan informasi ini untuk mengurangi penggunaan daya mereka</string>
+
+<string name="pref_config_key_datasaver_enabled" translatable="false">datasaver_enabled</string>
+<string name="pref_config_title_datasaver_enabled">Aktifkan penghemat data</string>
+<string name="pref_config_summary_datasaver_enabled">Kurangi data yang dikirim dan diterima pada koneksi berbayar dan pada data seluler</string>
+
+<string name="pref_config_key_enable_night_mode" translatable="false">enable_night_mode</string>
+<string name="pref_config_title_enable_night_mode">Aktifkan mode malam</string>
+<string name="pref_config_summary_enable_night_mode">Gunakan warna yang lebih gelap untuk mengurangi penggunaan daya pada panel OLED</string>
+
+<string name="pref_config_key_launch_boost_enabled" translatable="false">launch_boost_enabled</string>
+<string name="pref_config_title_launch_boost_enabled">Aktifkan peningkatan peluncuran</string>
+<string name="pref_config_summary_launch_boost_enabled">Percepat CPU saat membuka aplikasi untuk mempercepat waktu startup mereka</string>
+
+<string name="pref_config_key_vibration_enabled" translatable="false">vibration_enabled</string>
+<string name="pref_config_title_vibration_enabled">Aktifkan getaran</string>
+<string name="pref_config_summary_vibration_enabled">Izinkan getaran sentuhan dan notifikasi</string>
+
+<string name="pref_config_key_animation_enabled" translatable="false">animation_enabled</string>
+<string name="pref_config_title_animation_enabled">Aktifkan animasi</string>
+<string name="pref_config_summary_animation_enabled">Lanjutkan untuk menampilkan animasi</string>
+
+<string name="pref_config_key_soundtrigger_enabled" translatable="false">soundtrigger_enabled</string>
+<string name="pref_config_title_soundtrigger_enabled">Aktifkan pemicu suara</string>
+<string name="pref_config_summary_soundtrigger_enabled">Izinkan akses ke API perangkat keras SoundTrigger</string>
+
+<string name="pref_config_key_fullbackup_deferred" translatable="false">fullbackup_deferred</string>
+<string name="pref_config_title_fullbackup_deferred">Tunda backup penuh</string>
+<string name="pref_config_summary_fullbackup_deferred">Jadwalkan ulang backup cloud perangkat untuk nanti</string>
+
+<string name="pref_config_key_keyvaluebackup_deferred" translatable="false">keyvaluebackup_deferred</string>
+<string name="pref_config_title_keyvaluebackup_deferred">Tunda backup nilai kunci</string>
+<string name="pref_config_summary_keyvaluebackup_deferred">Jadwalkan ulang backup pengaturan aplikasi cloud untuk nanti</string>
+
+<string name="pref_config_key_firewall_enabled" translatable="false">firewall_enabled</string>
+<string name="pref_config_title_firewall_enabled">Aktifkan firewall</string>
+<string name="pref_config_summary_firewall_enabled">Bertahan dari permintaan web yang mungkin berbahaya</string>
+
+<string name="pref_config_key_gps_mode" translatable="false">gps_mode</string>
+<string name="pref_config_title_gps_mode">Mode lokasi</string>
+<string name="pref_config_summary_gps_mode">Bagaimana permintaan lokasi ditangani dalam mode hemat daya</string>
+
+<string name="pref_config_key_adjust_brightness_enabled" translatable="false">adjust_brightness_enabled</string>
+<string name="pref_config_title_adjust_brightness_enabled">Atur kecerahan</string>
+<string name="pref_config_summary_adjust_brightness_enabled">Kurangi kecerahan maksimum pada panel</string>
+
+<string name="pref_config_key_adjust_brightness_factor" translatable="false">adjust_brightness_factor</string>
+<string name="pref_config_title_adjust_brightness_factor">Faktor kecerahan</string>
+<string name="pref_config_summary_adjust_brightness_factor">Seberapa banyak faktor untuk mengurangi kecerahan layar</string>
+
+<string name="pref_config_key_force_all_apps_standby" translatable="false">force_all_apps_standby</string>
+<string name="pref_config_title_force_all_apps_standby">Paksa aplikasi masuk ke mode standby</string>
+<string name="pref_config_summary_force_all_apps_standby">Aplikasi latar belakang diletakkan untuk tidur sangat cepat</string>
+
+<string name="pref_config_key_force_background_check" translatable="false">force_background_check</string>
+<string name="pref_config_summary_force_background_check">Hentikan layanan latar belakang untuk proses yang tidak aktif</string>
+
+<string name="pref_config_key_optional_sensors_enabled" translatable="false">optional_sensors_enabled</string>
+<string name="pref_config_title_optional_sensors_enabled">Aktifkan sensor opsional</string>
+<string name="pref_config_summary_optional_sensors_enabled">Izinkan permintaan sensor yang tidak perlu (mis. sensor tepi)</string>
+
+<string name="pref_config_key_aod_enabled" translatable="false">aod_enabled</string>
+<string name="pref_config_title_aod_enabled">Selalu-tampilkan aktif</string>
+<string name="pref_config_summary_aod_enabled">Tampilkan AOD dalam mode tidur</string>
+
+<string name="pref_config_key_quick_doze_enabled" translatable="false">quick_doze_enabled</string>
+<string name="pref_config_title_quick_doze_enabled">Aktifkan tidur cepat</string>
+<string name="pref_config_summary_quick_doze_enabled">Masuk tidur dalam segera setelah layar dimatikan</string>
+
+<string name="pref_source_title">Support</string>
+<string name="pref_source_summary">Support Dengan Cara Berdonasi</string>
+<string name="pref_source_key" translatable="false">Klik Disini Untuk Donasi</string>
+
+<string name="pref_config_title_force_background_check">Paksa pemeriksaan latar belakang</string>
+<string name="pref_config_title_restore">Pulihkan</string>
+<string name="pref_config_summary_restore">Reset profil ini ke nilai defaultnya</string>
+<string name="pref_config_key_restore" translatable="false">restore</string>
+</resources>

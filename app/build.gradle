@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 34
+
+    androidResources {
+        generateLocaleConfig true
+    }
+
+    defaultConfig {
+        applicationId "me.rexx.saveyourbattery"
+        minSdk 26
+        targetSdk 34
+        versionCode 03032024
+        versionName "1.3.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode true
+                removeUnusedResources true
+                obfuscate false
+                optimizeCode true
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    namespace 'me.rexx.saveyourbattery'
+    lint {
+        disable 'MissingTranslation'
+    }
+
+    if (project.hasProperty('sign')) {
+        android {
+            signingConfigs {
+                release {
+                    storeFile file(System.getenv("RELEASE_STORE_FILE"))
+                    storePassword System.getenv("RELEASE_STORE_PASSWORD")
+                    keyAlias System.getenv("RELEASE_KEY_ALIAS")
+                    keyPassword System.getenv("RELEASE_KEY_PASSWORD")
+                }
+            }
+        }
+        android.buildTypes.release.signingConfig android.signingConfigs.release
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.core:core-ktx:1.12.0'
+}
